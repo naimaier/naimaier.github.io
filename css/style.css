@@ -1,21 +1,95 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.profile {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #eee;
+}
+
 #profile__pic {
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 20px;
 }
 
-.profile h1 {
+.profile__title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 15px;
+
+    margin-top: 1.5rem;
 }
 
-.profile p {
+.profile__subtitle {
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.projects {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.projects__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.projects__project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__project-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 1.5rem;
+
+    width: 200px;
+    height: 300px;
+}
+
+.projects__project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.projects__project-text {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 0.3rem;
+}
+
+.projects__project-keywords {
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+    text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 900px) / 2);
+        padding-right: calc((100% - 900px) / 2);
+    }
+
+    .projects__project-list {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 }
