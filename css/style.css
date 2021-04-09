@@ -53,7 +53,8 @@ body {
     align-items: center;
 }
 
-.projects__project-item {
+.projects__project-item a {
+    display: block;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
