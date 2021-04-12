@@ -55,6 +55,11 @@
     height: 300px;
 }
 
+.projects__project-image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
 .projects__project-title {
     font-size: 1.25rem;
     font-weight: bold;
