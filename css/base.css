@@ -7,11 +7,23 @@ body {
     padding-right: 6%;
 }
 
+.navigation {
+    background-color: #222; 
+    height: 60px;
+    text-align: center;
+}
+
+.navigation-icon {
+    width: 40px; 
+    margin-top: 10px; 
+    opacity: 95%;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #a4b0be;
+    background-color: #DDD;
 
     padding-top: 3rem;
     padding-bottom: 2rem;
