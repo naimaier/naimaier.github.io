@@ -49,14 +49,10 @@
     color: blue;
 }
 
-i {
-    font-style: italic;
-}
-
-ul {
+.project__list {
     list-style: disc;
 }
 
-li {
+.project__list__item {
     margin-left: 1rem;
 }
