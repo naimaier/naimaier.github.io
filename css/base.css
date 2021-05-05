@@ -11,15 +11,18 @@ i {
     padding-right: 6%;
 }
 
-.navigation {
-    background-color: #222; 
-    height: 60px;
+.header {
+    background-color: #222;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.header__navigation {
     text-align: center;
 }
 
-.navigation-icon {
-    width: 40px; 
-    margin-top: 10px; 
+.header__nav-icon {
+    width: 40px;  
     opacity: 95%;
 }
 
@@ -27,7 +30,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #DDD;
+    background-color: #EEE;
 
     padding-top: 3rem;
     padding-bottom: 2rem;
