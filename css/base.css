@@ -6,6 +6,10 @@ i {
     font-style: italic;
 }
 
+b {
+    font-weight: bold;
+}
+
 .container {
     padding-left: 6%;
     padding-right: 6%;

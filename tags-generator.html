@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Generator</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <header class="header container">
+        <nav class="header__navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/iconfinder_home_326656.svg" alt="Home link" class="header__nav-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project container">
+            <h1 class="project__title">Tags Generator</h1>
+            <figure class="project__screenshot">
+                <img src="img/tags-generator/tags-generator-screenshot.png" alt="Data Collector Screenshot" 
+                    class="project__screenshot-image">
+                <figcaption class="project__screenshot-caption">Tags Generator Screenshot</figcaption>
+            </figure>
+            <p class="project__text project__summary">
+                Simple tool that generate tags for tridium's supervisory system.
+            </p>
+        </section>
+
+        <!-- Description -->
+        <section class="project container">
+            <h2 class="project__section-title">The Problem</h2>
+            <p class="project__text">
+                In the projects they build, Tridium include a 
+                <a href="https://en.wikipedia.org/wiki/SCADA" target="_blank" class="project__anchor">
+                    supervisory system.
+                </a>
+                For each component in the project they need to create a <i>.mne</i> file with it's corresponding 
+                name and containing the variables it will use.
+            </p>
+            <p class="project__text">
+                Not a big problem in smaller projects, I was asked for help once when they had to deliver a 
+                project with around 700 components. They said they would take days creating the ~700 
+                configuration files.
+            </p>
+            <figure class="project__screenshot">
+                <img src="img/tags-generator/supervisory.jpg" alt="Supervisory system Screenshot" 
+                    class="project__screenshot-image">
+                <figcaption class="project__screenshot-caption">
+                    Supervisory system screenshot: each red dot is a component that need configuration
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="project container">
+            <h2 class="project__section-title">The Solution</h2>
+            <p class="project__text">
+                I built a simple tool that, given a <i>.csv</i> file containing a list of component names and 
+                corresponding id, generates the configuration files automatically according to an user defined 
+                template.
+            </p>
+            <ul class="project__figure-list">
+                <li>
+                    <figure class="project__screenshot">
+                        <img src="img/tags-generator/template-file.png" alt="Template file example" 
+                            class="project__screenshot-image">
+                        <figcaption class="project__screenshot-caption">
+                            Template file example
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="project__screenshot">
+                        <img src="img/tags-generator/output-file.png" alt="Generated file example" 
+                            class="project__screenshot-image">
+                        <figcaption class="project__screenshot-caption">
+                            Generated file example
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Technologies / What I've learned -->
+        <section class="project container">
+            <h2 class="project__section-title">Technical Information</h2>
+            <p class="project__text">
+                I choosed <b>Python</b> as the programming language because I tought the solution could be achieved 
+                in a simple script, and that it would save me time instead of configurating a java project.
+            </p>
+            <p class="project__text">
+                For ease of use, I decided to make a visual interface with <b>Tkinter</b> and distributed the project 
+                as an <i>.exe</i> file (using pyinstaller).
+            </p>
+        </section>
+
+        <!-- In use / Results-->
+        <section class="project container">
+            <h2 class="project__section-title">Results</h2>
+            <p class="project__text">
+                Tridium now uses this tool to generate the configuration files saving time and labor costs
+                and focusing on making the things they excel at and get the most value of.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <ul class="footer__social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/naimaier/" class="footer__social-item">
+                    <img src="img/iconfinder_Rounded_Linkedin2_svg_5282542-64.png" alt="LinkedIn link">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/naimaier" class="footer__social-item">
+                    <img src="img/iconfinder_mark-github_298822-64.png" alt="Github link">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
