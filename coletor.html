@@ -26,22 +26,30 @@
         <section class="project container">
             <h1 class="project__title">Data Collector</h1>
             <figure class="project__screenshot">
-                <img src="img/collector/coletor.png" alt="Data Collector Screenshot" class="project__screenshot-image">
+                <img src="img/collector/coletor.png" alt="Data Collector Screenshot" 
+                    class="project__screenshot-image">
                 <figcaption class="project__screenshot-caption">Data Collector Screenshot</figcaption>
             </figure>
+            <p class="project__text project__summary">
+                Desktop application that collects, displays and exports data from a <dfn>PLC</dfn> 
+                (Programmable Logic Controller).
+            </p>
         </section>
 
         <!-- Description -->
         <section class="project container">
             <h2 class="project__section-title">Description</h2>
-            <p class="project__text project__summary">
-                Desktop application that collects, displays and exports data from a <dfn>PLC</dfn> (Programmable Logic Controller).
-            </p>
             <p class="project__text">
-                Developed for <a href="http://www.tridium.com.br/" target="_blank" class="project__anchor">Tridium</a>, 
+                Developed for 
+                <a href="http://www.tridium.com.br/" target="_blank" class="project__anchor">
+                    Tridium
+                </a>
                 to be distributed along with Tridium automation projects for it's customers
-                <a href="http://www.globoinox.com.br/index.php/2019/08/12/medidor-de-leite/" target="_blank" class="project__anchor">milk meters</a> which, 
-                in turn are sold to the industry.
+                <a href="http://www.globoinox.com.br/index.php/2019/08/12/medidor-de-leite/" 
+                    target="_blank" class="project__anchor">
+                    milk meters
+                </a> 
+                which, in turn are sold to the industry.
             </p>
             <p class="project__text">
                 The Data Collector is a desktop software that collect log entries from <i>.csv</i> log files 
@@ -68,7 +76,8 @@
                 The application then allows the user to export the resulting data to a <i>.xls</i> file.
             </p>
             <figure class="project__screenshot">
-                <img src="img/collector/coletor-xls.png" alt="Exported xls file" class="project__screenshot-image">
+                <img src="img/collector/coletor-xls.png" alt="Exported xls file" 
+                class="project__screenshot-image">
                 <figcaption class="project__screenshot-caption">Exported xls file</figcaption>
             </figure>
         </section>
@@ -77,17 +86,17 @@
         <section class="project container">
             <h2 class="project__section-title">Technical Information</h2>
             <p class="project__text">
-                I first built this software using Java OpenJDK 12 and OpenJFX 12 and dependencies managed by Maven. 
-                In a later version I changed it to JDK 1.8 so it could run on 32 bit systems.
+                I first built this software using Java OpenJDK 12 and OpenJFX 12 and dependencies managed by
+                Maven. In a later version I changed it to JDK 1.8 so it could run on 32 bit systems.
             </p>
             <p class="project__text">
-                In developing the software I used the <i>Template Method Design Pattern</i> to organize the actions 
-                of importing data from several different sources, doing a general order of methods that would differ in 
-                implementation according to each case.
+                In developing the software I used the <i>Template Method Design Pattern</i> to organize the 
+                actions of importing data from several different sources, doing a general order of methods 
+                that would differ in implementation according to each case.
             </p>
             <p class="project__text">
-                I also used the <i>Strategy Pattern</i> to make it easy for future additions of PLC models and 
-                exporting file formats.
+                I also used the <i>Strategy Pattern</i> to make it easy for future additions of PLC models 
+                and exporting file formats.
             </p>
         </section>
 
@@ -96,8 +105,8 @@
             <h2 class="project__section-title">In Use</h2>
             <p class="project__text">
                 The Software is currently running in the industry and has received comments about it's 
-                easy of use. It simplified the way the logs where collected and transformed in excel files before 
-                (manually or using overly complicated software).
+                easy of use. It simplified the way the logs where collected and transformed in excel 
+                files before (manually or using overly complicated software).
             </p>
             <figure class="project__screenshot">
                 <img src="img/collector/milk-meter.jpeg" alt="Milk meter" class="project__screenshot-image">
