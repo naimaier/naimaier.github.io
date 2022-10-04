@@ -87,7 +87,11 @@
 @media screen and (min-width: 1024px) {
     .projects__project-list {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-end;
+    }
+    .projects__project-item {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
